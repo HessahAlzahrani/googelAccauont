@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">googelAccauont</string>
+    <string name="textceareteid">create your google account</string>
+    <string name="textnumberid">you can use letterers number and prid</string>
+    <string name="your_password">your password</string>
+    <string name="name2id">last name</string>
+    <string name="editTextTextPersonName">first Name</string>
+    <string name="emailAddressid">user</string>
+    <string name="typ_password_again">Password agian</string>
+    <string name="charecterseid">use 8 or mre</string>
+    <string name="show_passowrd">Show pssword</string>
+    <string name="signid">sign in instead</string>
+</resources>

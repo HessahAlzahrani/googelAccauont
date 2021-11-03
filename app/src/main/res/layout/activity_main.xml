@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/name1id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagegoogelid"
+        android:layout_width="281dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/googlelogo_color_272x92dp"/>
+
+
+    <TextView
+        android:id="@+id/textceareteid"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/textceareteid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagegoogelid" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/editTextTextPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/name2id"
+        app:layout_constraintTop_toBottomOf="@+id/textceareteid" />
+
+    <EditText
+        android:id="@+id/name2id"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType=""
+        android:hint="@string/name2id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textceareteid" />
+
+    <EditText
+        android:id="@+id/emailAddressid"
+        android:layout_width="345dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name2id"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:hint="@string/emailAddressid"/>
+
+    <TextView
+        android:id="@+id/textnumberid"
+        android:layout_width="265dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/textnumberid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddressid" />
+
+    <EditText
+        android:id="@+id/password1id"
+        android:layout_width="189dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/your_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/password2id"
+        app:layout_constraintTop_toBottomOf="@+id/textnumberid"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/password2id"
+        android:layout_width="178dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/typ_password_again"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnumberid"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/charecterseid"
+        android:layout_width="296dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/charecterseid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password1id" />
+
+    <CheckBox
+        android:id="@+id/showpasswordid"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="212dp"
+        android:text="@string/show_passowrd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charecterseid" />
+
+    <TextView
+        android:id="@+id/signid"
+        android:layout_width="188dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/signid"
+        app:layout_constraintEnd_toStartOf="@+id/bottonnextid"
+        app:layout_constraintTop_toBottomOf="@+id/showpasswordid" />
+
+    <Button
+        android:id="@+id/bottonnextid"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="60dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charecterseid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
